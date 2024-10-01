@@ -63,8 +63,22 @@
         spaces_down: spaces_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(DOWN_ARROW))>;
+            bindings = <&kp LC(DOWN_ARROW)>;
             label = "SPACES_DOWN";
+        };
+
+        personal_email: personal_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp P &kp H &kp A &kp V &kp I &kp B &kp E &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "PERSONAL_EMAIL";
+        };
+
+        nuon_email: nuon_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp O &kp B &kp AT &kp N &kp U &kp O &kp N &kp DOT &kp C &kp O>;
+            label = "NUON_EMAIL";
         };
     };
 
@@ -132,6 +146,24 @@
 &trans          &trans      &kp CAPSLOCK      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans        &trans          &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME         &trans   &trans
                                               &trans                &trans                &trans        &trans          &trans          &trans
             >;
+        };
+
+        macros {
+            bindings = <
+&trans  &trans  &trans  &trans  &personal_email  &trans    &trans  &nuon_email  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans       &trans  &trans  &trans  &trans
+                        &trans  &trans           &trans    &trans  &trans       &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        macros {
+            if-layers = <1 2>;
+            then-layer = <5>;
         };
     };
 };
