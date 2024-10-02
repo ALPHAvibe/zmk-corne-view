@@ -162,7 +162,7 @@
         compatible = "zmk,conditional-layers";
 
         macros {
-            if-layers = <3 3>;
+            if-layers = <1 2>;
             then-layer = <5>;
         };
     };
