@@ -129,7 +129,9 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
-                <&kp D>;
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
 
             label = "OPEN_SLACK";
         };
@@ -141,7 +143,9 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
-                <&kp F>;
+                <&kp F>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
 
             label = "OPEN_IMESSAGE";
         };
@@ -153,7 +157,9 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
-                <&kp G>;
+                <&kp G>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
 
             label = "OPEN_DATABASE";
         };
