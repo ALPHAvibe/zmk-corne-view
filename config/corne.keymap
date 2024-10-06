@@ -101,35 +101,35 @@
         open_terminal: open_kitty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(T))))>;
+            bindings = <&kp LG(LC(LA(LS(T))))>;
             label = "OPEN_KITTY";
         };
 
         open_browser: open_browser {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(B))))>;
+            bindings = <&kp LG(LC(LA(LS(B))))>;
             label = "OPEN_BROWSER";
         };
 
         open_slack: open_slack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(S))))>;
+            bindings = <&kp LG(LC(LA(LS(S))))>;
             label = "OPEN_SLACK";
         };
 
         open_imessage: open_imessage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(M))))>;
+            bindings = <&kp LG(LC(LA(LS(M))))>;
             label = "OPEN_IMESSAGE";
         };
 
         open_database: open_database {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(D))))>;
+            bindings = <&kp LG(LC(LA(LS(D))))>;
             label = "OPEN_DATABASE";
         };
     };
@@ -211,10 +211,10 @@
 
         macros {
             bindings = <
-&trans      &trans       &trans          &trans         &personal_email  &trans            &trans     &nuon_email  &trans  &trans  &trans  &trans
-&trans      &open_slack  &open_imessage  &open_browser  &open_terminal   &open_database    &trans     &trans       &trans  &trans  &trans  &trans
-&bt BT_CLR  &trans       &trans          &trans         &trans           &trans            &trans     &trans       &trans  &trans  &trans  &trans
-                                         &trans         &kp BACKSPACE    &kp DELETE        &kp ENTER  &kp SPACE    &trans
+&trans  &trans       &trans          &trans         &personal_email  &trans            &trans     &nuon_email  &trans  &trans  &trans  &trans
+&trans  &open_slack  &open_imessage  &open_browser  &open_terminal   &open_database    &trans     &trans       &trans  &trans  &trans  &trans
+&trans  &trans       &trans          &trans         &trans           &trans            &trans     &trans       &trans  &trans  &trans  &trans
+                                     &trans         &kp BACKSPACE    &kp DELETE        &kp ENTER  &kp SPACE    &trans
             >;
         };
     };
