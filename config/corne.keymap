@@ -154,10 +154,10 @@
 
         numbers_left {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5        &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans  &trans
+                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER       &kp SPACE       &trans
             >;
         };
 
@@ -169,10 +169,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &kp N1        &kp N2        &kp N3        &kp N4         &kp N5          &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans        &trans        &trans        &trans         &trans          &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4   &bt BT_SEL 4    &trans     &trans     &trans  &trans  &trans  &trans
+                                    &trans        &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &trans
             >;
         };
 
@@ -184,10 +184,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &trans
-&trans  &trans    &trans  &trans    &trans      &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
-&trans  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
-                          &trans    &trans      &trans         &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &trans
+&trans  &trans    &trans  &trans    &trans         &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
+&trans  &trans    &trans  &trans    &trans         &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
+                          &trans    &kp BACKSPACE  &kp DELETE     &kp ENTER  &kp SPACE  &trans
             >;
         };
 
