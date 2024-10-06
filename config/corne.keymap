@@ -101,16 +101,7 @@
         open_h: open_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_wait_time 5>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
-                <&macro_wait_time 5>,
-                <&kp H>,
-                <&macro_release>,
-                <&kp H &kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
-
+            bindings = <&kp LG(LA(LC(LS(H))))>;
             label = "OPEN_H";
         };
 
@@ -176,22 +167,6 @@
             bindings = <&kp LG(LA(LC(LS(L))))>;
             label = "OPEN_L";
         };
-
-        open_j_2: open_j_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_wait_time 5>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
-                <&macro_wait_time 5>,
-                <&kp J>,
-                <&macro_release>,
-                <&kp J &kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
-
-            label = "OPEN_J_2";
-        };
     };
 
     keymap {
@@ -214,10 +189,10 @@
 
         numbers_left {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5        &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER       &kp SPACE       &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5        &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
+                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
 
@@ -254,8 +229,8 @@
         function {
             bindings = <
 &kp F1      &kp F2  &kp F3        &kp F4                &kp F5                &kp F6        &kp F7     &kp F8            &kp F9        &kp F10       &kp F11       &kp F12
-&trans      &trans  &kp C_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans        &trans     &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &trans        &trans
-&bt BT_CLR  &trans  &kp CAPSLOCK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans        &trans     &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none       &none   &kp C_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none         &none      &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &none         &none
+&bt BT_CLR  &none   &kp CAPSLOCK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                   &trans                &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &trans
             >;
         };
@@ -271,10 +246,10 @@
 
         macros {
             bindings = <
-&none            &none  &none  &trans  &none          &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&personal_email  &none  &none  &none   &none          &none         &open_h    &open_j_2  &open_k  &open_l  &open_semicolon  &nuon_email
-&none            &none  &none  &none   &none          &none         &none      &none      &none    &none    &none            &none
-                               &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none        &none            &none  &trans  &none          &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none        &none            &none  &none   &none          &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
+&nuon_email  &personal_email  &none  &none   &none          &none         &none      &none      &none    &none    &none            &none
+                                     &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
     };
