@@ -101,49 +101,49 @@
         open_a: open_kitty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(A))))>;
+            bindings = <&kp LG(LA(LC(LS(A))))>;
             label = "OPEN_KITTY";
         };
 
         open_s: open_browser {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(S))))>;
+            bindings = <&kp LG(LA(LC(LS(S))))>;
             label = "OPEN_BROWSER";
         };
 
         open_d: open_slack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(D))))>;
+            bindings = <&kp LG(LA(LC(LS(D))))>;
             label = "OPEN_SLACK";
         };
 
         open_f: open_imessage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(F))))>;
+            bindings = <&kp LG(LA(LC(LS(F))))>;
             label = "OPEN_IMESSAGE";
         };
 
         open_g: open_database {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(G))))>;
+            bindings = <&kp LG(LA(LC(LS(G))))>;
             label = "OPEN_DATABASE";
         };
 
         open_z: open_zoom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(Z))))>;
+            bindings = <&kp LG(LA(LC(LS(Z))))>;
             label = "OPEN_ZOOM";
         };
 
         open_x: open_facetime {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(X))))>;
+            bindings = <&kp LG(LA(LC(LS(X))))>;
             label = "OPEN_FACETIME";
         };
 
@@ -157,14 +157,14 @@
         open_v: open_music {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(V))))>;
+            bindings = <&kp LG(LA(LC(LS(V))))>;
             label = "OPEN_MUSIC";
         };
 
         open_b: add_notes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(B))))>;
+            bindings = <&kp LG(LA(LC(LS(B))))>;
             label = "ADD_NOTES";
         };
     };
