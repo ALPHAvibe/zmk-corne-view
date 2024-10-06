@@ -101,7 +101,16 @@
         open_h: open_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LC(LS(H))))>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 5>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_wait_time 5>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp H &kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
             label = "OPEN_H";
         };
 
@@ -166,6 +175,22 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(L))))>;
             label = "OPEN_L";
+        };
+
+        open_j_2: open_j_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 5>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_wait_time 5>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp J &kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "OPEN_J_2";
         };
     };
 
@@ -246,10 +271,10 @@
 
         macros {
             bindings = <
-&trans  &trans  &trans  &nuon_email  &personal_email  &trans        &open_y    &open_u    &open_i  &open_o  &open_p          &trans
-&trans  &trans  &trans  &trans       &trans           &trans        &open_h    &open_j    &open_k  &open_l  &open_semicolon  &trans
-&trans  &trans  &trans  &trans       &trans           &trans        &trans     &trans     &trans   &trans   &trans           &trans
-                        &trans       &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none            &none  &none  &trans  &none          &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&personal_email  &none  &none  &none   &none          &none         &open_h    &open_j_2  &open_k  &open_l  &open_semicolon  &nuon_email
+&none            &none  &none  &none   &none          &none         &none      &none      &none    &none    &none            &none
+                               &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
     };
