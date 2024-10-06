@@ -98,73 +98,73 @@
             label = "NUON_EMAIL";
         };
 
-        open_terminal: open_kitty {
+        open_a: open_kitty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(T))))>;
+            bindings = <&kp LG(LC(LA(LS(A))))>;
             label = "OPEN_KITTY";
         };
 
-        open_browser: open_browser {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(B))))>;
-            label = "OPEN_BROWSER";
-        };
-
-        open_slack: open_slack {
+        open_s: open_browser {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LA(LS(S))))>;
-            label = "OPEN_SLACK";
+            label = "OPEN_BROWSER";
         };
 
-        open_imessage: open_imessage {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(I))))>;
-            label = "OPEN_IMESSAGE";
-        };
-
-        open_database: open_database {
+        open_d: open_slack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LA(LS(D))))>;
+            label = "OPEN_SLACK";
+        };
+
+        open_f: open_imessage {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(F))))>;
+            label = "OPEN_IMESSAGE";
+        };
+
+        open_g: open_database {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(G))))>;
             label = "OPEN_DATABASE";
         };
 
-        open_zoom: open_zoom {
+        open_z: open_zoom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LA(LS(Z))))>;
             label = "OPEN_ZOOM";
         };
 
-        open_facetime: open_facetime {
+        open_x: open_facetime {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(F))))>;
+            bindings = <&kp LG(LC(LA(LS(X))))>;
             label = "OPEN_FACETIME";
         };
 
-        open_freeform: open_freeform {
+        open_c: open_freeform {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(W))))>;
+            bindings = <&kp LG(LC(LA(LS(C))))>;
             label = "OPEN_FREEFORM";
         };
 
-        open_music: open_music {
+        open_v: open_music {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(M))))>;
+            bindings = <&kp LG(LC(LA(LS(V))))>;
             label = "OPEN_MUSIC";
         };
 
-        add_notes: add_notes {
+        open_b: add_notes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(N))))>;
+            bindings = <&kp LG(LC(LA(LS(B))))>;
             label = "ADD_NOTES";
         };
     };
@@ -246,10 +246,10 @@
 
         macros {
             bindings = <
-&trans  &trans          &trans          &trans          &add_notes      &trans            &trans     &personal_email  &nuon_email  &trans  &trans  &trans
-&trans  &open_music     &open_imessage  &open_browser   &open_terminal  &open_database    &trans     &trans           &trans       &trans  &trans  &trans
-&trans  &open_freeform  &open_zoom      &open_facetime  &open_imessage  &open_slack       &trans     &trans           &trans       &trans  &trans  &trans
-                                        &trans          &kp BACKSPACE   &kp DELETE        &kp ENTER  &kp SPACE        &trans
+&trans  &trans   &trans   &trans   &trans         &trans        &trans     &personal_email  &nuon_email  &trans  &trans  &trans
+&trans  &open_a  &open_s  &open_d  &open_f        &open_g       &trans     &trans           &trans       &trans  &trans  &trans
+&trans  &open_z  &open_x  &open_c  &open_v        &open_b       &trans     &trans           &trans       &trans  &trans  &trans
+                          &trans   &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE        &trans
             >;
         };
     };
