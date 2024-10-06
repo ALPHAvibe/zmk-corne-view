@@ -97,6 +97,27 @@
             bindings = <&kp R &kp O &kp B &kp AT &kp N &kp U &kp O &kp N &kp DOT &kp C &kp O>;
             label = "NUON_EMAIL";
         };
+
+        open_h: open_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(H))))>;
+            label = "OPEN_H";
+        };
+
+        open_j: open_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(J))))>;
+            label = "OPEN_J";
+        };
+
+        open_k: open_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(K))))>;
+            label = "OPEN_K";
+        };
     };
 
     keymap {
@@ -177,7 +198,7 @@
         macros {
             bindings = <
 &trans  &trans  &trans  &trans  &trans         &trans        &trans     &personal_email  &nuon_email  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans           &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &open_h    &open_j          &open_k      &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans           &trans       &trans  &trans  &trans
                         &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE        &trans
             >;
