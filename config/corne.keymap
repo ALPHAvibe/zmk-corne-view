@@ -118,6 +118,55 @@
             bindings = <&kp LG(LA(LC(LS(K))))>;
             label = "OPEN_K";
         };
+
+        open_semicolon: open_semincolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(SEMICOLON))))>;
+            label = "OPEN_SEMICOLON";
+        };
+
+        open_y: open_y {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(Y))))>;
+            label = "OPEN_Y";
+        };
+
+        open_u: open_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(U))))>;
+            label = "OPEN_U";
+        };
+
+        open_i: open_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(I))))>;
+            label = "OPEN_I";
+        };
+
+        open_o: open_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(O))))>;
+            label = "OPEN_O";
+        };
+
+        open_p: open_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(P))))>;
+            label = "OPEN_P";
+        };
+
+        open_l: open_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(L))))>;
+            label = "OPEN_L";
+        };
     };
 
     keymap {
@@ -197,10 +246,10 @@
 
         macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &personal_email  &nuon_email  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &open_h    &open_j          &open_k      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans           &trans       &trans  &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE        &trans
+&trans  &trans  &trans  &nuon_email  &personal_email  &trans        &open_y    &open_u    &open_i  &open_o  &open_p          &trans
+&trans  &trans  &trans  &trans       &trans           &trans        &open_h    &open_j    &open_k  &open_l  &open_semicolon  &trans
+&trans  &trans  &trans  &trans       &trans           &trans        &trans     &trans     &trans   &trans   &trans           &trans
+                        &trans       &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
     };
