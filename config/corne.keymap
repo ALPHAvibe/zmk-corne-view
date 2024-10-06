@@ -239,10 +239,10 @@
 
         macros {
             bindings = <
-&trans  &trans          &trans          &trans          &personal_email  &trans            &trans     &nuon_email  &trans  &trans  &trans  &trans
-&trans  &open_freeform  &open_imessage  &open_browser   &open_terminal   &open_database    &trans     &trans       &trans  &trans  &trans  &trans
-&trans  &open_music     &open_zoom      &open_facetime  &open_imessage   &open_slack       &trans     &trans       &trans  &trans  &trans  &trans
-                                        &trans          &kp BACKSPACE    &kp DELETE        &kp ENTER  &kp SPACE    &trans
+&trans  &trans          &trans          &trans          &trans          &trans            &trans     &personal_email  &nuon_email  &trans  &trans  &trans
+&trans  &open_music     &open_imessage  &open_browser   &open_terminal  &open_database    &trans     &trans           &trans       &trans  &trans  &trans
+&trans  &open_freeform  &open_zoom      &open_facetime  &open_imessage  &open_slack       &trans     &trans           &trans       &trans  &trans  &trans
+                                        &trans          &kp BACKSPACE   &kp DELETE        &kp ENTER  &kp SPACE        &trans
             >;
         };
     };
