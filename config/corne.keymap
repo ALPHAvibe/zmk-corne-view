@@ -147,10 +147,10 @@
             label = "OPEN_FACETIME";
         };
 
-        open_c: open_freeform {
+        open_m: open_freeform {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(C))))>;
+            bindings = <&kp LG(LC(LA(LS(M))))>;
             label = "OPEN_FREEFORM";
         };
 
@@ -248,7 +248,7 @@
             bindings = <
 &trans  &trans   &trans   &trans   &trans         &trans        &trans     &personal_email  &nuon_email  &trans  &trans  &trans
 &trans  &open_a  &open_s  &open_d  &open_f        &open_g       &trans     &trans           &trans       &trans  &trans  &trans
-&trans  &open_z  &open_x  &open_c  &open_v        &open_b       &trans     &trans           &trans       &trans  &trans  &trans
+&trans  &open_z  &open_x  &open_m  &open_v        &open_b       &trans     &trans           &trans       &trans  &trans  &trans
                           &trans   &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE        &trans
             >;
         };
