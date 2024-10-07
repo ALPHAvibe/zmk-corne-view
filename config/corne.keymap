@@ -171,7 +171,7 @@
         window_snap_full: window_snap_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LS(F)))>;
+            bindings = <&kp RG(RA(RS(F)))>;
             label = "WINDOW_SNAP_FULL";
         };
 
@@ -258,19 +258,19 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans             &trans              &trans             &trans        &spaces_left    &spaces_down    &spaces_up    &spaces_right    &trans  &trans
-&trans  &trans  &window_snap_left  &window_snap_right  &window_snap_full  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans             &trans              &trans             &trans        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                                   &trans              &kp BACKSPACE      &kp DELETE    &kp ENTER       &kp SPACE       &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &spaces_left    &spaces_down    &spaces_up    &spaces_right    &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER       &kp SPACE       &trans
             >;
         };
 
         macros {
             bindings = <
-&none        &none            &none  &trans  &none          &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&none        &none            &none  &none   &none          &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
-&nuon_email  &personal_email  &none  &none   &none          &none         &none      &none      &none    &none    &none            &none
-                                     &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none        &none            &none              &trans              &none              &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none        &none            &window_snap_left  &window_snap_right  &window_snap_full  &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
+&nuon_email  &personal_email  &none              &none               &none              &none         &none      &none      &none    &none    &none            &none
+                                                 &trans              &kp BACKSPACE      &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
     };
