@@ -255,14 +255,14 @@
         nav_prev_tab: nav_prev_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LC(LS(LEFT_BRACKET))))>;
+            bindings = <&kp LG(LA(LS(LEFT_BRACKET)))>;
             label = "NAV_PREV_TAB";
         };
 
         nav_next_tab: nav_next_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LC(LS(RIGHT_BRACKET))))>;
+            bindings = <&kp LG(LA(LS(RIGHT_BRACKET)))>;
             label = "NAV_NEXT_TAB";
         };
 
