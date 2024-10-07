@@ -168,25 +168,46 @@
             label = "OPEN_L";
         };
 
-        window_snap_full: window_snap_full {
+        mac_snap_full: mac_snap_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(RA(RS(F)))>;
-            label = "WINDOW_SNAP_FULL";
+            bindings = <&kp LG(LA(LC(LS(F))))>;
+            label = "MAC_SNAP_FULL";
         };
 
-        window_snap_left: window_snap_left {
+        mac_snap_left: mac_snap_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LS(S)))>;
-            label = "WINDOW_SNAP_LEFT";
+            bindings = <&kp LG(LA(LC(LS(S))))>;
+            label = "MAC_SNAP_LEFT";
         };
 
-        window_snap_right: window_snap_right {
+        mac_snap_right: mac_snap_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LS(D)))>;
-            label = "WINDOW_SNAP_RIGHT";
+            bindings = <&kp LG(LA(LC(LS(D))))>;
+            label = "MAC_SNAP_RIGHT";
+        };
+
+        ipad_snap_full: ipad_snap_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(V))))>;
+            label = "IPAD_SNAP_FULL";
+        };
+
+        ipad_snap_left: ipad_snap_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(X))))>;
+            label = "IPAD_SNAP_LEFT";
+        };
+
+        iPad_snap_right: iPad_snap_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LC(LS(C))))>;
+            label = "IPAD_SNAP_RIGHT";
         };
     };
 
@@ -267,10 +288,10 @@
 
         macros {
             bindings = <
-&none        &none            &none              &trans              &none              &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&none        &none            &window_snap_left  &window_snap_right  &window_snap_full  &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
-&nuon_email  &personal_email  &none              &none               &none              &none         &none      &none      &none    &none    &none            &none
-                                                 &trans              &kp BACKSPACE      &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none        &none            &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none        &none            &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
+&nuon_email  &personal_email  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &none            &none
+                                               &trans            &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
         };
     };
