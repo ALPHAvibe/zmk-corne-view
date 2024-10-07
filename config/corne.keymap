@@ -238,32 +238,32 @@
             label = "TMUX_RIGHT";
         };
 
-        safari_back: safari_back {
+        nav_back: nav_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT_BRACKET)>;
-            label = "SAFARI_BACK";
+            bindings = <&kp LG(LC(LS(LEFT_BRACKET)))>;
+            label = "NAV_BACK";
         };
 
-        safari_forward: safari_forward {
+        nav_forward: nav_forward {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT_BRACKET)>;
-            label = "SAFARI_FORWARD";
+            bindings = <&kp LG(LC(LS(RIGHT_BRACKET)))>;
+            label = "NAV_FORWARD";
         };
 
-        safari_prev_tab: safari_prev_tab {
+        nav_prev_tab: nav_prev_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(TAB))>;
-            label = "SAFARI_PREV_TAB";
+            bindings = <&kp LG(LA(LC(LS(LEFT_BRACKET))))>;
+            label = "NAV_PREV_TAB";
         };
 
-        safari_next_tab: safari_next_tab {
+        nav_next_tab: nav_next_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(TAB)>;
-            label = "SAFARI_NEXT_TAB";
+            bindings = <&kp LG(LA(LC(LS(RIGHT_BRACKET))))>;
+            label = "NAV_NEXT_TAB";
         };
 
         tmux_window_1: tmux_window_1 {
@@ -380,10 +380,10 @@
 
         navigation {
             bindings = <
-&none  &tmux_window_1  &tmux_window_2  &tmux_window_3    &tmux_window_4    &tmux_window_5     &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none  &none
-&none  &none           &safari_back    &safari_prev_tab  &safari_next_tab  &safari_forward    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &none           &spaces_left    &spaces_up        &spaces_down      &spaces_right      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
-                                       &trans            &kp BACKSPACE     &kp DELETE         &kp ENTER       &kp SPACE       &trans
+&none  &tmux_window_1  &tmux_window_2  &tmux_window_3  &tmux_window_4  &tmux_window_5    &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none  &none
+&none  &none           &nav_back       &nav_prev_tab   &nav_next_tab   &nav_forward      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none           &spaces_left    &spaces_up      &spaces_down    &spaces_right     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
+                                       &trans          &kp BACKSPACE   &kp DELETE        &kp ENTER       &kp SPACE       &trans
             >;
 
             label = "NAV";
