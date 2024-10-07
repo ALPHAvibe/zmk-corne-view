@@ -167,6 +167,27 @@
             bindings = <&kp LG(LA(LC(LS(L))))>;
             label = "OPEN_L";
         };
+
+        window_snap_full: window_snap_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(F)))>;
+            label = "WINDOW_SNAP_FULL";
+        };
+
+        window_snap_left: window_snap_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(S)))>;
+            label = "WINDOW_SNAP_LEFT";
+        };
+
+        window_snap_right: window_snap_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(D)))>;
+            label = "WINDOW_SNAP_RIGHT";
+        };
     };
 
     keymap {
@@ -237,10 +258,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans        &spaces_left    &spaces_down    &spaces_up    &spaces_right    &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER       &kp SPACE       &trans
+&trans  &trans  &trans             &trans              &trans             &trans        &spaces_left    &spaces_down    &spaces_up    &spaces_right    &trans  &trans
+&trans  &trans  &window_snap_left  &window_snap_right  &window_snap_full  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans             &trans              &trans             &trans        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                                   &trans              &kp BACKSPACE      &kp DELETE    &kp ENTER       &kp SPACE       &trans
             >;
         };
 
