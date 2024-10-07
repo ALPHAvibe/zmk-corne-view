@@ -265,12 +265,47 @@
             bindings = <&kp LC(TAB)>;
             label = "SAFARI_NEXT_TAB";
         };
+
+        tmux_window_1: tmux_window_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_1>;
+            label = "TMUX_WINDOW_1";
+        };
+
+        tmux_window_2: tmux_window_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_2>;
+            label = "TMUX_WINDOW_2";
+        };
+
+        tmux_window_3: tmux_window_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_3>;
+            label = "TMUX_WINDOW_3";
+        };
+
+        tmux_window_4: tmux_window_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_4>;
+            label = "TMUX_WINDOW_4";
+        };
+
+        tmux_window_5: tmux_window_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_5>;
+            label = "TMUX_WINDOW_5";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -283,6 +318,8 @@
 &mo 4       &kp Z              &kp X                &kp C            &kp V                &kp B           &kp N        &kp M                 &kp COMMA         &kp DOT               &kp FSLH              &mo 4
                                                     &mo 6            &lt 1 BACKSPACE      &lt 3 DELETE    &lt 3 ENTER  &lt 2 SPACE           &mo 6
             >;
+
+            label = "BASE";
         };
 
         numbers_left {
@@ -292,6 +329,8 @@
 &trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
                         &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
+
+            label = "NUM(L)";
         };
 
         numbers_right {
@@ -307,6 +346,8 @@
 &trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
                         &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
+
+            label = "NUM(R)";
         };
 
         symbols {
@@ -322,6 +363,8 @@
 &trans  &trans    &trans  &trans    &trans         &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
                           &trans    &kp BACKSPACE  &kp DELETE     &kp ENTER  &kp SPACE  &trans
             >;
+
+            label = "!@#$";
         };
 
         function {
@@ -331,24 +374,30 @@
 &bt BT_CLR  &none   &kp CAPSLOCK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                   &trans                &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &trans
             >;
+
+            label = "FN";
         };
 
-        movement {
+        navigation {
             bindings = <
-&none  &none             &spaces_left      &spaces_up    &spaces_down     &spaces_right    &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none  &none
-&none  &safari_prev_tab  &safari_next_tab  &safari_back  &safari_forward  &none            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &none             &none             &none         &none            &none            &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
-                                           &trans        &kp BACKSPACE    &kp DELETE       &kp ENTER       &kp SPACE       &trans
+&none  &tmux_window_1  &tmux_window_2  &tmux_window_3    &tmux_window_4    &tmux_window_5     &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none  &none
+&none  &none           &safari_back    &safari_prev_tab  &safari_next_tab  &safari_forward    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none           &spaces_left    &spaces_up        &spaces_down      &spaces_right      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
+                                       &trans            &kp BACKSPACE     &kp DELETE         &kp ENTER       &kp SPACE       &trans
             >;
+
+            label = "NAV";
         };
 
         macros {
             bindings = <
-&none        &none            &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&none        &none            &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
-&nuon_email  &personal_email  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &none            &none
-                                               &trans            &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none            &none  &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none            &none  &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
+&personal_email  &none  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &none            &nuon_email
+                                         &trans            &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
             >;
+
+            label = "MACROS";
         };
     };
 
