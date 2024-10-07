@@ -209,6 +209,62 @@
             bindings = <&kp LG(LA(LC(LS(C))))>;
             label = "IPAD_SNAP_RIGHT";
         };
+
+        tmux_down: tmux_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp J>;
+            label = "TMUX_DOWN";
+        };
+
+        tmux_up: tmux_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp K>;
+            label = "TMUX_UP";
+        };
+
+        tmux_left: tmux_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp H>;
+            label = "TMUX_LEFT";
+        };
+
+        tmux_right: tmux_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp L>;
+            label = "TMUX_RIGHT";
+        };
+
+        safari_back: safari_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            label = "SAFARI_BACK";
+        };
+
+        safari_forward: safari_forward {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            label = "SAFARI_FORWARD";
+        };
+
+        safari_prev_tab: safari_prev_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(TAB))>;
+            label = "SAFARI_PREV_TAB";
+        };
+
+        safari_next_tab: safari_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "SAFARI_NEXT_TAB";
+        };
     };
 
     keymap {
@@ -279,10 +335,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans        &spaces_left    &spaces_down    &spaces_up    &spaces_right    &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER       &kp SPACE       &trans
+&trans  &trans            &spaces_left      &spaces_up    &spaces_down     &spaces_right    &tmux_left      &tmux_down      &tmux_up      &tmux_right      &trans  &trans
+&trans  &safari_prev_tab  &safari_next_tab  &safari_back  &safari_forward  &trans           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans            &trans            &trans        &trans           &trans           &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                                            &trans        &kp BACKSPACE    &kp DELETE       &kp ENTER       &kp SPACE       &trans
             >;
         };
 
