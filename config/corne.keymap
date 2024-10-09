@@ -315,8 +315,8 @@
             bindings = <
 &kp TAB     &kp Q              &kp W                &kp E            &kp R                &kp T           &kp Y        &kp U                 &kp I             &kp O                 &kp P                 &kp BACKSLASH
 &kp ESCAPE  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &lt 5 G         &lt 5 H      &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT SEMI  &kp SQT
-&mo 4       &kp Z              &kp X                &kp C            &kp V                &kp B           &kp N        &kp M                 &kp COMMA         &kp DOT               &kp FSLH              &mo 4
-                                                    &mo 6            &lt 1 BACKSPACE      &lt 3 DELETE    &lt 3 ENTER  &lt 2 SPACE           &mo 6
+&mo 4       &lt 4 Z            &kp X                &kp C            &kp V                &kp B           &kp N        &kp M                 &kp COMMA         &kp DOT               &lt 4 SLASH           &mo 4
+                                                    &lt 6 ESCAPE     &lt 1 BACKSPACE      &lt 3 DELETE    &lt 3 ENTER  &lt 2 SPACE           &lt 6 TAB
             >;
 
             label = "BASE";
@@ -324,10 +324,10 @@
 
         numbers_left {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5        &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&trans  &kp N1  &kp N2  &kp N3      &kp N4         &kp N5        &kp N6     &kp N7     &kp N8   &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans      &trans         &trans        &trans     &trans     &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans        &trans     &trans     &trans   &trans  &trans  &trans
+                        &kp ESCAPE  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "NUM(L)";
@@ -341,10 +341,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5        &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans        &trans     &trans     &trans  &trans  &trans  &trans
-                        &trans  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&trans  &kp N1  &kp N2  &kp N3      &kp N4         &kp N5        &kp N6     &kp N7     &kp N8   &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans      &trans         &trans        &trans     &trans     &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans        &trans     &trans     &trans   &trans  &trans  &trans
+                        &kp ESCAPE  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "NUM(R)";
@@ -358,10 +358,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &trans
-&trans  &trans    &trans  &trans    &trans         &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
-&trans  &trans    &trans  &trans    &trans         &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
-                          &trans    &kp BACKSPACE  &kp DELETE     &kp ENTER  &kp SPACE  &trans
+&trans  &kp EXCL   &kp AT             &kp HASH    &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE   &trans      &trans         &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
+&trans  &kp TILDE  &kp DOUBLE_QUOTES  &trans      &trans         &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
+                                      &kp ESCAPE  &kp BACKSPACE  &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "!@#$";
@@ -369,10 +369,10 @@
 
         function {
             bindings = <
-&kp F1      &kp F2  &kp F3        &kp F4                &kp F5                &kp F6        &kp F7     &kp F8            &kp F9        &kp F10       &kp F11       &kp F12
-&none       &none   &kp C_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none         &none      &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &none         &none
-&bt BT_CLR  &none   &kp CAPSLOCK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                  &trans                &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &trans
+&none       &kp F1  &kp F2        &kp F3                &kp F4                &kp F5        &kp F6        &kp F7            &kp F8        &kp F9        &kp F10       &none
+&none       &none   &kp C_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11       &kp F12       &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &none         &none
+&bt BT_CLR  &none   &kp CAPSLOCK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+                                  &kp ESCAPE            &kp BACKSPACE         &kp DELETE    &kp ENTER     &kp SPACE         &kp TAB
             >;
 
             label = "FN";
@@ -383,7 +383,7 @@
 &none  &tmux_window_1  &tmux_window_2  &tmux_window_3  &tmux_window_4  &tmux_window_5    &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none  &none
 &none  &none           &nav_back       &nav_prev_tab   &nav_next_tab   &nav_forward      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
 &none  &none           &spaces_left    &spaces_up      &spaces_down    &spaces_right     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
-                                       &trans          &kp BACKSPACE   &kp DELETE        &kp ENTER       &kp SPACE       &trans
+                                       &kp ESCAPE      &kp BACKSPACE   &kp DELETE        &kp ENTER       &kp SPACE       &kp TAB
             >;
 
             label = "NAV";
@@ -391,10 +391,10 @@
 
         macros {
             bindings = <
-&none            &none  &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&none            &none  &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
-&personal_email  &none  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &none            &nuon_email
-                                         &trans            &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &trans
+&none  &none            &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none  &none            &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
+&none  &personal_email  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &nuon_email      &none
+                                         &kp ESCAPE        &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "MACROS";
