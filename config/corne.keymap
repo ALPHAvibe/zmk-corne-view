@@ -391,7 +391,7 @@
 
         macros {
             bindings = <
-&none  &none            &none            &trans            &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
+&none  &none            &none            &none             &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
 &none  &none            &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
 &none  &personal_email  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &nuon_email      &none
                                          &kp ESCAPE        &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
