@@ -358,10 +358,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp AT             &kp HASH    &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &trans
-&trans  &kp GRAVE  &kp SINGLE_QUOTE   &trans      &trans         &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
-&trans  &kp TILDE  &kp DOUBLE_QUOTES  &trans      &trans         &trans         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
-                                      &kp ESCAPE  &kp BACKSPACE  &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
+&none  &kp EXCL   &kp AT                &kp HASH               &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &none
+&none  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE   &none          &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp PIPE       &kp GRAVE
+&none  &kp TILDE  &none                 &none                  &kp DOUBLE_QUOTES  &none          &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp BACKSLASH  &kp TILDE
+                                        &kp ESCAPE             &kp BACKSPACE      &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "!@#$";
