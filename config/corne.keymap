@@ -369,10 +369,10 @@
 
         function_left {
             bindings = <
-&none  &kp F1  &kp F2      &kp F3                &kp F4                &kp F5        &kp F6     &kp F7            &kp F8      &kp F9      &kp F10  &none
-&none  &none   &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11       &kp F12    &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &none    &none
-&none  &none   &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &none             &none       &none       &none    &none
-                           &kp ESCAPE            &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &kp TAB
+&none   &kp F1  &kp F2      &kp F3                &kp F4                &kp F5        &kp F6     &kp F7            &kp F8      &kp F9      &kp F10  &none
+&none   &none   &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11       &kp F12    &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &none    &none
+&trans  &trans  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &none             &none       &none       &trans   &trans
+                            &kp ESCAPE            &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &kp TAB
             >;
 
             label = "FN(L)";
@@ -381,20 +381,20 @@
         function_right {
             label = "FN(R)";
             bindings = <
-&none  &kp F1  &kp F2      &kp F3                &kp F4                &kp F5        &kp F6     &kp F7            &kp F8      &kp F9      &kp F10  &none
-&none  &none   &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11       &kp F12    &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &none    &none
-&none  &none   &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &none             &none       &none       &none    &none
-                           &kp ESCAPE            &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &kp TAB
+&none   &kp F1  &kp F2      &kp F3                &kp F4                &kp F5        &kp F6     &kp F7            &kp F8      &kp F9      &kp F10  &none
+&none   &none   &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11       &kp F12    &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &none    &none
+&trans  &trans  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none      &none             &none       &none       &trans   &trans
+                            &kp ESCAPE            &kp BACKSPACE         &kp DELETE    &kp ENTER  &kp SPACE         &kp TAB
             >;
         };
 
         function_conditional {
             label = "FN(C)";
             bindings = <
-&none  &none  &none         &none       &none          &none         &none         &none         &none         &none         &none         &none
-&none  &none  &none         &none       &none          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &none  &kp CAPSLOCK  &none       &none          &none         &none         &none         &none         &none         &none         &none
-                            &kp ESCAPE  &kp BACKSPACE  &kp DELETE    &kp ENTER     &kp SPACE     &kp TAB
+&none   &none   &none         &none       &none          &none         &none         &none         &none         &none         &none         &none
+&none   &none   &none         &none       &none          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&trans  &trans  &kp CAPSLOCK  &none       &none          &none         &none         &none         &none         &none         &trans        &trans
+                              &kp ESCAPE  &kp BACKSPACE  &kp DELETE    &kp ENTER     &kp SPACE     &kp TAB
             >;
         };
 
