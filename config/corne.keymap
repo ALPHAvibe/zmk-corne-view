@@ -302,6 +302,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <13 22>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
