@@ -411,10 +411,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL   &kp AT            &kp HASH           &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK             &kp LPAR               &kp RPAR       &none
-&none  &kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE   &kp UNDER      &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &none
-&none  &kp GRAVE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &none          &none      &kp PLUS   &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH  &none
-                                    &kp ESCAPE         &kp BACKSPACE      &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
+&none  &kp EXCL   &kp AT                &kp HASH          &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK          &kp LPAR               &kp RPAR       &none
+&none  &kp TILDE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp SINGLE_QUOTE   &kp UNDER      &kp MINUS  &kp EQUAL  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp PIPE       &none
+&none  &kp GRAVE  &kp LESS_THAN         &kp LEFT_BRACKET  &kp DOUBLE_QUOTES  &none          &none      &kp PLUS   &kp RIGHT_BRACKET  &kp GREATER_THAN       &kp BACKSLASH  &none
+                                        &kp ESCAPE        &kp BACKSPACE      &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
             >;
 
             label = "!@#$";
