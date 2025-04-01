@@ -481,5 +481,10 @@
             if-layers = <4 5>;
             then-layer = <6>;
         };
+
+        Navigation {
+            if-layers = <1 2>;
+            then-layer = <7>;
+        };
     };
 };
