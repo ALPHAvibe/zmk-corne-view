@@ -252,31 +252,31 @@
             label = "IPAD_SNAP_RIGHT";
         };
 
-        tmux_down: tmux_down {
+        macro_7: tmux_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp J>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_7))))>;
             label = "TMUX_DOWN";
         };
 
-        tmux_up: tmux_up {
+        macro_8: tmux_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp K>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_8))))>;
             label = "TMUX_UP";
         };
 
-        tmux_left: tmux_left {
+        macro_6: tmux_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp H>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_6))))>;
             label = "TMUX_LEFT";
         };
 
-        tmux_right: tmux_right {
+        macro_9: tmux_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp L>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_9))))>;
             label = "TMUX_RIGHT";
         };
 
@@ -308,39 +308,46 @@
             label = "NAV_NEXT_TAB";
         };
 
-        tmux_window_1: tmux_window_1 {
+        macro_1: tmux_window_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp NUMBER_1>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_1))))>;
             label = "TMUX_WINDOW_1";
         };
 
-        tmux_window_2: tmux_window_2 {
+        macro_2: tmux_window_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp NUMBER_2>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
             label = "TMUX_WINDOW_2";
         };
 
-        tmux_window_3: tmux_window_3 {
+        macro_3: tmux_window_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp NUMBER_3>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_3))))>;
             label = "TMUX_WINDOW_3";
         };
 
-        tmux_window_4: tmux_window_4 {
+        macro_4: tmux_window_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp NUMBER_4>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_4))))>;
             label = "TMUX_WINDOW_4";
         };
 
-        tmux_window_5: tmux_window_5 {
+        macro_5: tmux_window_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp NUMBER_5>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_5))))>;
             label = "TMUX_WINDOW_5";
+        };
+
+        macro_0: macro_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_0))))>;
+            label = "MACRO_0";
         };
     };
 
@@ -453,10 +460,10 @@
 
         navigation {
             bindings = <
-&none  &tmux_window_1  &tmux_window_2       &tmux_window_3    &tmux_window_4        &tmux_window_5    &tmux_left      &tmux_down      &tmux_up      &tmux_right      &none            &none
-&none  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_COMMAND 0  &nav_forward      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &none
-&none  &none           &spaces_left         &spaces_up        &spaces_down          &spaces_right     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none            &none
-                                            &kp ESCAPE        &kp BACKSPACE         &kp DELETE        &kp ENTER       &kp SPACE       &kp TAB
+&none  &macro_1        &macro_2             &macro_3          &macro_4              &macro_5         &macro_6        &macro_7        &macro_8      &macro_9         &macro_0         &none
+&none  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_COMMAND 0  &nav_forward     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &none
+&none  &none           &spaces_left         &spaces_up        &spaces_down          &spaces_right    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none            &none
+                                            &kp ESCAPE        &kp BACKSPACE         &kp DELETE       &kp ENTER       &kp SPACE       &kp TAB
             >;
 
             label = "NAV";
