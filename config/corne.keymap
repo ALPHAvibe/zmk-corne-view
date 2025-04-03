@@ -98,182 +98,140 @@
     };
 
     macros {
-        spaces_left: spaces_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_ARROW)>;
-            label = "SPACES_LEFT";
-        };
-
-        spaces_right: spaces_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT_ARROW)>;
-            label = "SPACES_RIGHT";
-        };
-
-        spaces_up: spaces_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(UP_ARROW)>;
-            label = "SPACES_UP";
-        };
-
-        spaces_down: spaces_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(DOWN_ARROW)>;
-            label = "SPACES_DOWN";
-        };
-
-        personal_email: personal_email {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp L &kp P &kp H &kp A &kp V &kp I &kp B &kp E &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "PERSONAL_EMAIL";
-        };
-
-        nuon_email: nuon_email {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp O &kp B &kp AT &kp N &kp U &kp O &kp N &kp DOT &kp C &kp O>;
-            label = "NUON_EMAIL";
-        };
-
-        open_h: open_h {
+        hyper_h: open_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(H))))>;
             label = "OPEN_H";
         };
 
-        open_j: open_j {
+        hyper_j: open_j {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(J))))>;
             label = "OPEN_J";
         };
 
-        open_k: open_k {
+        hyper_k: open_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(K))))>;
             label = "OPEN_K";
         };
 
-        open_semicolon: open_semincolon {
+        hyper_semicolon: open_semincolon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(SEMICOLON))))>;
             label = "OPEN_SEMICOLON";
         };
 
-        open_y: open_y {
+        hyper_y: open_y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(Y))))>;
             label = "OPEN_Y";
         };
 
-        open_u: open_u {
+        hyper_u: open_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(U))))>;
             label = "OPEN_U";
         };
 
-        open_i: open_i {
+        hyper_i: open_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(I))))>;
             label = "OPEN_I";
         };
 
-        open_o: open_o {
+        hyper_o: open_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(O))))>;
             label = "OPEN_O";
         };
 
-        open_p: open_p {
+        hyper_p: open_p {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(P))))>;
             label = "OPEN_P";
         };
 
-        open_l: open_l {
+        hyper_l: open_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(L))))>;
             label = "OPEN_L";
         };
 
-        mac_snap_full: mac_snap_full {
+        hyper_f: mac_snap_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(F))))>;
             label = "MAC_SNAP_FULL";
         };
 
-        mac_snap_left: mac_snap_left {
+        hyper_s: mac_snap_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(S))))>;
             label = "MAC_SNAP_LEFT";
         };
 
-        mac_snap_right: mac_snap_right {
+        hyper_d: mac_snap_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(D))))>;
             label = "MAC_SNAP_RIGHT";
         };
 
-        ipad_snap_full: ipad_snap_full {
+        hyper_v: ipad_snap_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(V))))>;
             label = "IPAD_SNAP_FULL";
         };
 
-        ipad_snap_left: ipad_snap_left {
+        hyper_x: ipad_snap_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(X))))>;
             label = "IPAD_SNAP_LEFT";
         };
 
-        iPad_snap_right: iPad_snap_right {
+        hyper_c: iPad_snap_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LC(LS(C))))>;
             label = "IPAD_SNAP_RIGHT";
         };
 
-        macro_7: tmux_down {
+        hyper_7: tmux_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_7))))>;
             label = "TMUX_DOWN";
         };
 
-        macro_8: tmux_up {
+        hyper_8: tmux_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_8))))>;
             label = "TMUX_UP";
         };
 
-        macro_6: tmux_left {
+        hyper_6: tmux_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_6))))>;
             label = "TMUX_LEFT";
         };
 
-        macro_9: tmux_right {
+        hyper_9: tmux_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_9))))>;
@@ -308,46 +266,123 @@
             label = "NAV_NEXT_TAB";
         };
 
-        macro_1: tmux_window_1 {
+        hyper_1: tmux_window_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_1))))>;
             label = "TMUX_WINDOW_1";
         };
 
-        macro_2: tmux_window_2 {
+        hyper_2: tmux_window_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
             label = "TMUX_WINDOW_2";
         };
 
-        macro_3: tmux_window_3 {
+        hyper_3: tmux_window_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_3))))>;
             label = "TMUX_WINDOW_3";
         };
 
-        macro_4: tmux_window_4 {
+        hyper_4: tmux_window_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_4))))>;
             label = "TMUX_WINDOW_4";
         };
 
-        macro_5: tmux_window_5 {
+        hyper_5: tmux_window_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_5))))>;
             label = "TMUX_WINDOW_5";
         };
 
-        macro_0: macro_0 {
+        hyper_0: macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LC(LG(NUMBER_0))))>;
             label = "MACRO_0";
+        };
+
+        hyper_n: hyper_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(N))))>;
+            label = "HYPER_N";
+        };
+
+        hyper_m: hyper_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(M))))>;
+            label = "HYPER_M";
+        };
+
+        hyper_comma: hyper_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(COMMA))))>;
+            label = "HYPER_COMMA";
+        };
+
+        hyper_period: hyper_period {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(PERIOD))))>;
+            label = "HYPER_PERIOD";
+        };
+
+        hyper_slash: hyper_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(SLASH))))>;
+            label = "HYPER_SLASH";
+        };
+
+        meh_z: hyper_f1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(Z)))>;
+            label = "HYPER_F1";
+        };
+
+        meh_x: hyper_f2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(X)))>;
+            label = "HYPER_F2";
+        };
+
+        meh_c: meh_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(C)))>;
+            label = "MEH_C";
+        };
+
+        meh_v: meh_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(V)))>;
+            label = "MEH_V";
+        };
+
+        meh_b: meh_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(B)))>;
+            label = "MEH_B";
+        };
+
+        meh_slash: meh_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(SLASH)))>;
+            label = "MEH_SLASH";
         };
     };
 
@@ -373,10 +408,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q              &kp W                &kp E            &kp R                &kp T           &kp Y        &kp U                 &kp I             &kp O                 &kp P                 &kp BACKSLASH
-&kp ESCAPE  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G           &kp H        &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT SEMI  &kp SQT
-&mo 4       &lt 4 Z            &kp X                &kp C            &kp V                &kp B           &kp N        &kp M                 &kp COMMA         &kp DOT               &lt 5 SLASH           &mo 5
-                                                    &lt 8 ESCAPE     &lt 1 BACKSPACE      &lt 3 DELETE    &lt 3 ENTER  &lt 2 SPACE           &lt 8 TAB
+&kp TAB     &kp Q              &kp W                &kp E                     &kp R                &kp T           &kp Y        &kp U                 &kp I                          &kp O                 &kp P                 &kp BACKSLASH
+&kp ESCAPE  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D           &hml LEFT_COMMAND F  &kp G           &kp H        &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K               &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT SEMI  &kp SQT
+&mo 4       &lt 4 Z            &kp X                &kp C                     &kp V                &kp B           &kp N        &kp M                 &kp COMMA                      &kp DOT               &lt 5 SLASH           &mo 5
+                                                    &mt LS(LA(RCTRL)) ESCAPE  &lt 1 BACKSPACE      &lt 3 DELETE    &lt 3 ENTER  &lt 2 SPACE           &mt RS(RA(RC(RIGHT_GUI))) TAB
             >;
 
             label = "BASE";
@@ -421,7 +456,7 @@
 &none  &kp EXCL   &kp AT          &kp HASH              &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK              &kp LPAR          &kp RPAR       &none
 &none  &kp TILDE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE   &kp UNDER      &kp MINUS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE       &none
 &none  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &none          &none      &kp PLUS   &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH  &none
-                                  &kp ESCAPE            &kp BACKSPACE      &kp DELETE     &kp ENTER  &kp SPACE  &kp TAB
+                                  &trans                &trans             &trans         &trans     &trans     &trans
             >;
 
             label = "!@#$";
@@ -460,24 +495,13 @@
 
         navigation {
             bindings = <
-&none  &macro_1        &macro_2             &macro_3          &macro_4              &macro_5         &macro_6        &macro_7        &macro_8      &macro_9         &macro_0         &none
-&none  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_COMMAND 0  &nav_forward     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &none
-&none  &none           &spaces_left         &spaces_up        &spaces_down          &spaces_right    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none            &none
-                                            &kp ESCAPE        &kp BACKSPACE         &kp DELETE       &kp ENTER       &kp SPACE       &kp TAB
+&none  &hyper_1        &hyper_2             &hyper_3          &hyper_4              &hyper_5        &hyper_6        &hyper_7        &hyper_8      &hyper_9         &hyper_0         &none
+&none  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_COMMAND 0  &nav_forward    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &none
+&none  &meh_z          &meh_x               &meh_c            &meh_v                &meh_b          &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &meh_slash       &none
+                                            &trans            &trans                &trans          &trans          &trans          &trans
             >;
 
             label = "NAV";
-        };
-
-        macros {
-            bindings = <
-&none  &none            &none            &none             &none            &none         &open_y    &open_u    &open_i  &open_o  &open_p          &none
-&none  &none            &mac_snap_left   &mac_snap_right   &mac_snap_full   &none         &open_h    &open_j    &open_k  &open_l  &open_semicolon  &none
-&none  &personal_email  &ipad_snap_left  &iPad_snap_right  &ipad_snap_full  &none         &none      &none      &none    &none    &nuon_email      &none
-                                         &kp ESCAPE        &kp BACKSPACE    &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
-            >;
-
-            label = "MACROS";
         };
     };
 
