@@ -454,8 +454,8 @@
 
             bindings = <
 &none  &kp EXCL   &kp AT          &kp HASH              &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTRK              &kp LPAR          &kp RPAR       &none
-&none  &kp TILDE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE   &kp UNDER      &kp MINUS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE       &none
-&none  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &none          &none      &kp PLUS   &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH  &none
+&none  &kp GRAVE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE   &kp UNDER      &kp MINUS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE       &none
+&none  &kp TILDE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &none          &none      &kp PLUS   &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH  &none
                                   &trans                &trans             &trans         &trans     &trans     &trans
             >;
 
