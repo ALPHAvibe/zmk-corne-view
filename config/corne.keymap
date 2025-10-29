@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    tapping-term-ms = <180>;
+    tapping-term-ms = <250>;
     flavor = "balanced";
-    quick-tap-ms = <160>;
+    quick-tap-ms = <220>;
     hold-trigger-on-release;
 };
 
