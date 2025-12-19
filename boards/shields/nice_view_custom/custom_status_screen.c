@@ -4,7 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/logging/log.h>
+LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
+
 #include <lvgl.h>
+#include <zmk/display.h>
 
 #ifndef LV_ATTRIBUTE_MEM_ALIGN
 #define LV_ATTRIBUTE_MEM_ALIGN
@@ -14,6 +19,7 @@
 #define LV_ATTRIBUTE_IMG_BITMAP
 #endif
 
+// Custom bitmap data
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BITMAP uint8_t bitmap_map[] = {
   0x03, 0x00, 0x01, 0x00, 	/*Color of index 0*/
   0xde, 0x34, 0x6c, 0xe9, 	/*Color of index 1*/
@@ -168,3 +174,18 @@ const lv_img_dsc_t custom_status_image = {
   .data_size = 1268,
   .data = bitmap_map,
 };
+
+static lv_obj_t *screen;
+
+lv_obj_t *zmk_display_status_screen() {
+    if (screen == NULL) {
+        screen = lv_obj_create(NULL);
+
+        // Create and display the custom image
+        lv_obj_t *img = lv_img_create(screen);
+        lv_img_set_src(img, &custom_status_image);
+        lv_obj_align(img, LV_ALIGN_TOP_RIGHT, 0, 0);
+    }
+
+    return screen;
+}
