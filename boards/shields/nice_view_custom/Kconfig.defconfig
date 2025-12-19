@@ -6,7 +6,7 @@ if SHIELD_NICE_VIEW_CUSTOM
 config LV_Z_VDB_SIZE
     default 100
 
-config LV_Z_DPI
+config LV_DPI_DEF
     default 161
 
 config LV_Z_BITS_PER_PIXEL
@@ -16,15 +16,20 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-config ZMK_DISPLAY
-    select LVGL_USE_CONT
-    select LVGL_FONT_MONTSERRAT_26
-    select LVGL_USE_LABEL
-    select LVGL_USE_IMG
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
 
 choice ZMK_DISPLAY_STATUS_SCREEN
     default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 endchoice
+
+config LV_Z_MEM_POOL_SIZE
+    default 4096 if ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+    select LV_USE_IMAGE
+    select LV_FONT_MONTSERRAT_16
 
 if ZMK_DISPLAY
 
@@ -33,10 +38,6 @@ config SPI
 
 config LS0XX
     default y
-
-config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
-    select LV_USE_IMG
-    imply LVGL_OBJ_LABEL
 
 endif # ZMK_DISPLAY
 
