@@ -1,0 +1,18 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_CORNE_RIGHT
+    def_bool $(shields_list_contains,corne_right)
+
+if SHIELD_CORNE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne"
+
+if ZMK_DISPLAY
+
+rsource "widgets/Kconfig"
+
+endif # ZMK_DISPLAY
+
+endif # SHIELD_CORNE_RIGHT

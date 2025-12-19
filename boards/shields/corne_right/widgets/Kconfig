@@ -1,0 +1,8 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config CUSTOM_WIDGET_STATUS
+    bool "Custom status widget"
+    default y
+    select LVGL_USE_IMG
+    select LVGL_USE_LABEL
