@@ -179,12 +179,12 @@ static lv_obj_t *screen;
 
 lv_obj_t *zmk_display_status_screen() {
     if (screen == NULL) {
-        screen = lv_obj_create(NULL);
+        screen = lv_obj_create(NULL, NULL);
 
         // Create and display the custom image
-        lv_obj_t *img = lv_img_create(screen);
+        lv_obj_t *img = lv_img_create(screen, NULL);
         lv_img_set_src(img, &custom_status_image);
-        lv_obj_align(img, LV_ALIGN_TOP_RIGHT, 0, 0);
+        lv_obj_align(img, NULL, LV_ALIGN_CENTER, 0, 0);
     }
 
     return screen;
