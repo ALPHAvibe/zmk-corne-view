@@ -175,17 +175,14 @@ const lv_img_dsc_t custom_status_image = {
   .data = bitmap_map,
 };
 
-static lv_obj_t *screen;
-
 lv_obj_t *zmk_display_status_screen() {
-    if (screen == NULL) {
-        screen = lv_obj_create(NULL, NULL);
+    lv_obj_t *screen;
+    screen = lv_obj_create(NULL);
 
-        // Create and display the custom image
-        lv_obj_t *img = lv_img_create(screen, NULL);
-        lv_img_set_src(img, &custom_status_image);
-        lv_obj_align(img, NULL, LV_ALIGN_CENTER, 0, 0);
-    }
+    // Create and display the custom image
+    lv_obj_t *img = lv_img_create(screen);
+    lv_img_set_src(img, &custom_status_image);
+    lv_obj_align(img, LV_ALIGN_CENTER, 0, 0);
 
     return screen;
 }
