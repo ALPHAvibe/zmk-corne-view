@@ -19,6 +19,10 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #define LV_ATTRIBUTE_IMG_BITMAP
 #endif
 
+#ifndef LV_ATTRIBUTE_LARGE_CONST
+#define LV_ATTRIBUTE_LARGE_CONST
+#endif
+
 // Custom bitmap data
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BITMAP uint8_t bitmap_map[] = {
   0x03, 0x00, 0x01, 0x00, 	/*Color of index 0*/
