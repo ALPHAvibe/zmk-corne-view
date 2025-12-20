@@ -1,18 +1,7 @@
 #include <lvgl.h>
+#include "custom_art.h"
 
-#ifndef LV_ATTRIBUTE_MEM_ALIGN
-#define LV_ATTRIBUTE_MEM_ALIGN
-#endif
-
-#ifndef LV_ATTRIBUTE_IMG_BITMAP
-#define LV_ATTRIBUTE_IMG_BITMAP
-#endif
-
-#ifndef LV_ATTRIBUTE_LARGE_CONST
-#define LV_ATTRIBUTE_LARGE_CONST
-#endif
-
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BITMAP uint8_t custom_art_map[] = {
+const uint8_t custom_art_map[] = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -151,15 +140,8 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BITMAP ui
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 };
 
-const lv_img_dsc_t custom_art = {
-  .header.cf = LV_IMG_CF_ALPHA_1BIT,
-  .header.always_zero = 0,
-  .header.reserved = 0,
-  .header.w = 70,
-  .header.h = 140,
-  .data_size = 1260,
-  .data = custom_art_map,
-};
+const int custom_art_width = 70;
+const int custom_art_height = 140;
+const int custom_art_stride = 9;
