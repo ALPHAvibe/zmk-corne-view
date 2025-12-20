@@ -1,0 +1,5 @@
+if(CONFIG_NICE_VIEW_CUSTOM_WIDGET)
+    target_sources(app PRIVATE widgets/status.c)
+    target_sources(app PRIVATE widgets/peripheral_status.c)
+    target_sources(app PRIVATE widgets/custom_art.c)
+endif()
